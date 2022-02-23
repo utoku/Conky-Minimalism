@@ -45,30 +45,30 @@ settings_table = {
   {
      name='downspeedf',
      arg='enp3s0',
-     max=800,
+     max=4000,
      bg_colour=0xffffff,
      bg_alpha=0.1,
-     fg_colour=0xffffff,
+     fg_colour=0xc1e1c1,
      fg_alpha=0.6,
      x=104, y=238,
      radius=60,
-     thickness=3,
+     thickness=8,
      start_angle=0,
-     end_angle=360
+     end_angle=350
   },
   {
      name='upspeedf',
      arg='enp3s0',
-     max=800,
+     max=1200,
      bg_colour=0xffffff,
      bg_alpha=0.1,
      fg_colour=0xffffff,
      fg_alpha=0.6,
      x=104, y=238,
      radius=50,
-     thickness=10,
+     thickness=8,
      start_angle=0,
-     end_angle=360
+     end_angle=350
    },
    {
      name='cpu',
@@ -78,11 +78,11 @@ settings_table = {
      bg_alpha=0.1,
      fg_colour=0x607d8b,
      fg_alpha=0.6,
-     x=155, y=420,
+     x=280, y=420,
      radius=70,
-     thickness=10,
-     start_angle=140,
-     end_angle=450
+     thickness=9,
+     start_angle=0,
+     end_angle=85
    },
    {
      name='cpu',
@@ -92,11 +92,11 @@ settings_table = {
      bg_alpha=0.1,
      fg_colour=0x3f51b5,
      fg_alpha=0.6,
-     x=155, y=420,
+     x=280, y=420,
      radius=60,
      thickness=9,
-     start_angle=140,
-     end_angle=450
+     start_angle=0,
+     end_angle=85
    },
    {
      name='cpu',
@@ -106,11 +106,11 @@ settings_table = {
      bg_alpha=0.1,
      fg_colour=0x00796b,
      fg_alpha=0.6,
-     x=155, y=420,
+     x=280, y=420,
      radius=50,
      thickness=9,
-     start_angle=140,
-     end_angle=450
+     start_angle=0,
+     end_angle=85
    },
    {
      name='cpu',
@@ -120,13 +120,185 @@ settings_table = {
      bg_alpha=0.1,
      fg_colour=0xe53935,
      fg_alpha=0.6,
-     x=155, y=420,
+     x=280, y=420,
      radius=40,
      thickness=9,
-     start_angle=140,
-     end_angle=450
+     start_angle=0,
+     end_angle=85
+   },
+
+   {
+     name='cpu',
+     arg='cpu4',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x607d8b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=70,
+     thickness=9,
+     start_angle=90,
+     end_angle=175
    },
    {
+     name='cpu',
+     arg='cpu5',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x3f51b5,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=60,
+     thickness=9,
+     start_angle=90,
+     end_angle=175
+   },
+   {
+     name='cpu',
+     arg='cpu6',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x00796b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=50,
+     thickness=9,
+     start_angle=90,
+     end_angle=175
+   },
+   {
+     name='cpu',
+     arg='cpu7',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0xe53935,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=40,
+     thickness=9,
+     start_angle=90,
+     end_angle=175
+   },
+
+   {
+     name='cpu',
+     arg='cpu8',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x607d8b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=70,
+     thickness=9,
+     start_angle=180,
+     end_angle=265
+   },
+   {
+     name='cpu',
+     arg='cpu9',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x3f51b5,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=60,
+     thickness=9,
+     start_angle=180,
+     end_angle=265
+   },
+   {
+     name='cpu',
+     arg='cpu10',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x00796b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=50,
+     thickness=9,
+     start_angle=180,
+     end_angle=265
+   },
+   {
+     name='cpu',
+     arg='cpu11',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0xe53935,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=40,
+     thickness=9,
+     start_angle=180,
+     end_angle=265
+   },
+
+   {
+     name='cpu',
+     arg='cpu12',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x607d8b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=70,
+     thickness=9,
+     start_angle=270,
+     end_angle=355
+   },
+   {
+     name='cpu',
+     arg='cpu13',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x3f51b5,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=60,
+     thickness=9,
+     start_angle=270,
+     end_angle=355
+   },
+   {
+     name='cpu',
+     arg='cpu14',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0x00796b,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=50,
+     thickness=9,
+     start_angle=270,
+     end_angle=355
+   },
+   {
+     name='cpu',
+     arg='cpu15',
+     max=100,
+     bg_colour=0xffffff,
+     bg_alpha=0.1,
+     fg_colour=0xe53935,
+     fg_alpha=0.6,
+     x=280, y=420,
+     radius=40,
+     thickness=9,
+     start_angle=270,
+     end_angle=355
+   },
+
+--[[   {
        name='fs_used_perc',
        arg='/',
        max=100,
@@ -139,7 +311,7 @@ settings_table = {
        thickness=18,
        start_angle=0,
        end_angle=270
-   },
+   },]]
    {
        name='memperc',
        arg='/',
@@ -148,12 +320,27 @@ settings_table = {
        bg_alpha=0.1,
        fg_colour=0xd7d7d7,
        fg_alpha=0.6,
-       x=285, y=590,
+       x=285, y=640,
+       radius=60,
+       thickness=7,
+       start_angle=0,
+       end_angle=355
+   },
+   {
+       name='swapperc',
+       arg='/',
+       max=100,
+       bg_colour=0xffffff,
+       bg_alpha=0.1,
+       fg_colour=0xd7d7d7,
+       fg_alpha=0.6,
+       x=285, y=640,
        radius=70,
        thickness=7,
        start_angle=0,
-       end_angle=270
+       end_angle=355
    }
+
 }
 --set line colour
 
@@ -170,7 +357,7 @@ settings_table = {
   clock_alpha=0.6
 
 --Show the seconds hand ?
-  show_seconds=true
+  show_seconds=false
 
 require 'cairo'
 
@@ -244,32 +431,36 @@ function draw_clock_hands(cr,xc,yc)
   end
 end
 
-function DrawLine (cr,start_x,start_y,end_x,end_y,linewidth)
+--Draws from the right side, reverse x from right
+function DrawLine (cr,start_x,start_y,delta_x,delta_y,linewidth)
   -- set colour (r,g,b,alpha)
   cairo_set_source_rgba(cr,1,1,1,0.8)
   cairo_move_to(cr,conky_window.width - start_x,start_y)
-  cairo_rel_line_to(cr,-end_x,end_y)
+  cairo_rel_line_to(cr,-delta_x,delta_y)
   cairo_set_line_width(cr,linewidth)
   cairo_stroke(cr)
 
 end
 
+--fixme: only draws bars for temperature
 function DrawBars (cr,start_x,start_y,bar_width,bar_height,corenum,r,g,b)
   -- set colour (r,g,b,alpha)
   cairo_set_source_rgba(cr,1,1,1,0.1)
   cairo_rectangle (cr,start_x,start_y,bar_width,-bar_height)
   cairo_fill(cr)
   cairo_set_source_rgba(cr,r,g,b,1)
-  value = tonumber(conky_parse(string.format("${exec sensors | grep -o 'Core %s:        +[0-9].' | sed -r 's/%s:|[^0-9]//g'}",corenum,corenum)))
+  --value = tonumber(conky_parse(string.format("${exec sensors | grep -o 'Core %s:        +[0-9].' | sed -r 's/%s:|[^0-9]//g'}",corenum,corenum)))
   -- IF TEMP BARS DO NOT SHOW, try commenting the line above with '--' and uncommenting the line below by removing '--'. (Thanks to /u/IAmAFedora)
   --value = tonumber(conky_parse(string.format("${exec sensors | grep -o 'Core %s:         +[0-9].' | sed -r 's/%s:|[^0-9]//g'}",corenum,corenum)))
   -- OR THESE ONES (remove '--[[' and ']]':
-  --[[local handle = io.popen("sensors")
+  local handle = io.popen("sensors|grep 'Tdie'")
   local cpuTemp = handle:read("*a")
-  value = tonumber(cpuTemp:match("CPU Temperature:%s+\+(%d+)"))
+  value = tonumber(cpuTemp:match("%d+"))
   handle:close()
-  ]]
-  max_value=100
+  --hack to cancel it at the moment
+  --value=50
+  --print ("temperature value is ", value)
+  max_value=90
   scale=bar_height/max_value
   indicator_height=scale*value
   cairo_rectangle (cr,start_x,start_y,bar_width,-indicator_height)
@@ -326,15 +517,19 @@ end
   DrawLine(cr,398,155,0,23,4)
   DrawLine(cr,0,155,400,0,4)
   --draw cpu temp bars
-  DrawBars(cr,250,470,30,100,0,rgb_to_r_g_b(0x607d8b))
-  DrawBars(cr,290,470,30,100,1,rgb_to_r_g_b(0x3f51b5))
-  DrawBars(cr,330,470,30,100,2,rgb_to_r_g_b(0x00796b))
-  DrawBars(cr,370,470,30,100,3,rgb_to_r_g_b(0xe53935))
+  --DrawBars(cr,250,470,30,100,0,rgb_to_r_g_b(0x607d8b))
+  --DrawBars(cr,290,470,30,100,1,rgb_to_r_g_b(0x3f51b5))
+  --DrawBars(cr,330,470,30,100,2,rgb_to_r_g_b(0x00796b))
+  --DrawBars(cr,370,470,30,100,3,rgb_to_r_g_b(0xe53935))
+  DrawBars(cr,370,470,30,100,3,rgb_to_r_g_b(0xff8000))
   --draw cpu temp lines
-  DrawLine(cr,0,320,348,0,4)
-  DrawLine(cr,348,318,0,26,4)
+  --horizontal
+  DrawLine(cr,0,320,226,0,4)
+  --vertical
+  DrawLine(cr,224,318,0,26,4)
+  --DrawLine(cr,0,320,100,200,1)
   --draw mem lines
-  DrawLine(cr,0,585,144,0,4)
+  DrawLine(cr,0,635,144,0,4)
 
 
   draw_clock_hands(cr,clock_x,clock_y)

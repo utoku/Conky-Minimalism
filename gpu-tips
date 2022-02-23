@@ -1,0 +1,8 @@
+#GPU Attributes:
+
+${color1}${font sans-serif:bold:size=8}GPU's: ${hr 2}${font}
+${color1}GPU 0: ${color #FCAF3E}${exec nvidia-smi -i 0 --query-gpu=gpu_name --format=csv,noheader,nounits} $color
+${color1}Temperature ${color}  ${execi 60 nvidia-settings -query [gpu:0]/GPUCoreTemp -t} °C
+${color1}Utilization ${color}  ${exec nvidia-smi -i 0 | grep % | cut -c 61-63} %
+${color1}VRAM Utilization ${color} ${exec nvidia-smi -i 0| grep % | cut -c 37-40} MB
+${color1}Power Draw ${color} ${exec nvidia-smi -i 0| grep % | cut -c 21-23} W
