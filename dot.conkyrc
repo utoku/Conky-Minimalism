@@ -31,10 +31,9 @@ conky.config = {
 
   --minimum_size 1100 700
 	    maximum_width = 700,
-
 	    alignment = 'top_right',
 	    gap_x = 0,
-	    gap_y = 200,
+	    gap_y = 100,
 
   -- -- Graphics settings -- #
 	    draw_shades = false,
@@ -54,7 +53,7 @@ conky.config = {
 
       --own_window_transparent yes
 	    own_window_colour = '#000000',
-	    minimum_width = 400, minimum_height = 700,
+	    minimum_width = 400, minimum_height = 800,
 
       --CORRECT THIS PATH
       lua_load = '~/.conky/minimalism/clocks.lua',
@@ -84,14 +83,13 @@ conky.text = [[
   #${offset 100}${voffset 3}${font Roboto-Regular:size=11}${fs_used /} / ${fs_size /}
   #${offset 90} $mem / $memmax
 
-
+  #${color #ffffff}${fs_used_perc /}  
   #${offset 175}${color #ad1a26}[$memperc%]
   #${offset 205}${voffset 2}${color #ffffff}${font VictorMono:size=14}mem
   ##CORRECT THIS PATH
   ${image ~/.conky/minimalism/wifi-router.png -p 280,130 -s 50x50}
   ${image ~/.conky/minimalism/cpu.png -p 204,342 -s 50x50}
-  ${image ~/.conky/minimalism/ram.png -p 210,565 -s 50x50}
-  
-  
+  ${image ~/.conky/minimalism/ram.png -p 210,525 -s 50x50}
+  ${image ~/.conky/minimalism/hdd.png -p 210,705 -s 50x50}
 
 ]];
