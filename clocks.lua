@@ -306,7 +306,7 @@ settings_table = {
       fg_colour=0xd7d7d7,
       fg_alpha=0.6,
       x=285, y=600,
-      radius=60,
+      radius=50,
       thickness=7,
       start_angle=0,
       end_angle=355
@@ -320,11 +320,14 @@ settings_table = {
       fg_colour=0xd7d7d7,
       fg_alpha=0.6,
       x=285, y=600,
-      radius=70,
+      radius=60,
       thickness=7,
       start_angle=0,
       end_angle=355
    },
+
+   --BUG : currently cpu rings do not work if we draw more than one
+   --filesystem ring.
    {
       name='fs_used_perc',
       arg='/',
@@ -340,38 +343,38 @@ settings_table = {
       end_angle=355
 
    },
-   {
-      name='fs_used_perc',
-      arg='/home',
-      max=100,
-      bg_colour=0xffffff,
-      bg_alpha=0.1,
-      fg_colour=0xd7d7d7,
-      fg_alpha=0.6,
-      x=285, y=780,
-      radius=60,
-      thickness=7,
-      start_angle=0,
-      end_angle=355
-   },
-   {
-      name='fs_used_perc',
-      arg='/aux',
-      max=100,
-      bg_colour=0xffffff,
-      bg_alpha=0.1,
-      fg_colour=0xd7d7d7,
-      fg_alpha=0.6,
-      x=285, y=780,
-      radius=70,
-      thickness=7,
-      start_angle=0,
-      end_angle=355
-   }
+   -- {
+   --    name='fs_used_perc',
+   --    arg='/home',
+   --    max=100,
+   --    bg_colour=0xffffff,
+   --    bg_alpha=0.1,
+   --    fg_colour=0xd7d7d7,
+   --    fg_alpha=0.6,
+   --    x=285, y=780,
+   --    radius=60,
+   --    thickness=7,
+   --    start_angle=0,
+   --    end_angle=355
+   -- },
+   -- {
+   --    name='fs_used_perc',
+   --    arg='/aux',
+   --    max=100,
+   --    bg_colour=0xffffff,
+   --    bg_alpha=0.1,
+   --    fg_colour=0xd7d7d7,
+   --    fg_alpha=0.6,
+   --    x=285, y=780,
+   --    radius=70,
+   --    thickness=7,
+   --    start_angle=0,
+   --    end_angle=355
+   -- }
 
 }
---set line colour
 
+--set line colour
 
 --Use these settings to define the origin and extent of your clock.
   clock_r=50
@@ -462,7 +465,7 @@ end
 --Draws from the right side, reverse x from right
 function DrawLine (cr,start_x,start_y,delta_x,delta_y,linewidth)
   -- set colour (r,g,b,alpha)
-  cairo_set_source_rgba(cr,1,1,1,0.8)
+  cairo_set_source_rgba(cr,1,1,1,0.4)
   cairo_move_to(cr,conky_window.width - start_x,start_y)
   cairo_rel_line_to(cr,-delta_x,delta_y)
   cairo_set_line_width(cr,linewidth)
