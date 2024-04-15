@@ -45,7 +45,7 @@ settings_table = {
    {
       name='downspeedf',
       arg='enp3s0',
-      max=4000,
+      max=10000,
       bg_colour=0xffffff,
       bg_alpha=0.1,
       fg_colour=0xc1e1c1,
@@ -59,7 +59,7 @@ settings_table = {
    {
       name='upspeedf',
       arg='enp3s0',
-      max=1200,
+      max=1000,
       bg_colour=0xffffff,
       bg_alpha=0.1,
       fg_colour=0xffffff,
