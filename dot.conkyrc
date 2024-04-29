@@ -1,65 +1,66 @@
 conky.config = {
-  -- -- Conky settings -- #
-	    background = false,
-	    update_interval = 1,
+    -- -- Conky settings -- #
+    background = false,
+    update_interval = 1,
 
-	    cpu_avg_samples = 1,
-	    net_avg_samples = 2,
+    cpu_avg_samples = 1,
+    net_avg_samples = 2,
 
-	    override_utf8_locale = true,
+    override_utf8_locale = true,
 
-	    double_buffer = true,
-	    no_buffers = true,
+    double_buffer = true,
+    no_buffers = true,
 
-      text_buffer_size = 32768,
-      imlib_cache_size = 0,
+    text_buffer_size = 32768,
+    imlib_cache_size = 0,
 
-  -- -- Window specifications -- #
-	    own_window = true,
-      own_window_type = 'dock',
-      own_window_argb_visual = true,
-      own_window_argb_value = 0,
-	    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-      own_window_title = 'clicky',
+    -- -- Window specifications -- #
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_title = 'clicky',
 
-	    border_inner_margin = 50,
-	    border_outer_margin = 0,
+    border_inner_margin = 50,
+    border_outer_margin = 0,
 
-	-- Conky on second monitor
-	    xinerama_head = 2,
+    -- Conky on second monitor
+    xinerama_head = 2,
 
 
-  --minimum_size 1100 700
-	    maximum_width = 700,
-	    alignment = 'top_right',
-	    gap_x = 0,
-	    gap_y = 100,
+    --minimum_size 1100 700
+    maximum_width = 700,
+    alignment = 'top_right',
+    --alignment = 'middle_middle',
+    gap_x = 0,
+    gap_y = 100,
 
-  -- -- Graphics settings -- #
-	    draw_shades = false,
-	    draw_outline = false,
-	    draw_borders = false,
-	    draw_graph_borders = false,
+    -- -- Graphics settings -- #
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
 
   -- -- Text settings -- #
-	    use_xft = true,
-	    font = 'Ubuntu Mono:size=10',
-	    xftalpha = 0.8,
-      --Ícones: ${font Conky Icons by Carelli:size=14}
+    use_xft = true,
+    font = 'Ubuntu Mono:size=10',
+    xftalpha = 0.8,
+    --Ícones: ${font Conky Icons by Carelli:size=14}
 
-	    uppercase = false,
+    uppercase = false,
 
-	    default_color = '#FFFFFF',
+    default_color = '#FFFFFF',
 
-      --own_window_transparent yes
-	    own_window_colour = '#000000',
-	    minimum_width = 400, minimum_height = 800,
+    --own_window_transparent yes
+    own_window_colour = '#000000',
+    minimum_width = 400, minimum_height = 800,
 
-      --CORRECT THIS PATH
-      lua_load = '~/.conky/minimalism/clocks.lua',
-      lua_draw_hook_pre = 'clock_rings',
-      --lua_load = '~/.conky/minimalism/clicky.lua',
-      --lua_draw_hook_pre = 'main',
+    --CORRECT THIS PATH
+    lua_load = '~/.conky/minimalism/clocks.lua',
+    lua_draw_hook_pre = 'clock_rings',
+    --lua_load = '~/.conky/minimalism/gmt.lua',
+    --lua_draw_hook_pre = 'conky_main',
 };
 
 conky.text = [[
